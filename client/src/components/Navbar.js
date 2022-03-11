@@ -87,7 +87,7 @@ export default function Navbar() {
       </form>
       ):(<>
         <NavLink to="/" className="btn btn-outline-danger btn-light " type="button" onClick={()=>{
-          axios.post('/logout',{}).then((response)=>{
+          axios.post('/top-headline',{}).then((response)=>{
      
           if(response.status===200){
             history.push('/');
